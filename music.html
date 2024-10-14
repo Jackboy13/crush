@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="music.css">
+    <title>Love Song</title>
+</head>
+<body>
+    <div class="video-container">
+        <video id="love-video" loop autoplay muted>
+            <source src="kanta.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <button class="play-button" id="play-btn">Unmute Video</button>
+    <h1>❤️Enjoy the Love Song! ❤️</h1>
+
+    <script>
+        const video = document.getElementById('love-video');
+        const playButton = document.getElementById('play-btn');
+
+       
+        video.play();
+
+
+        playButton.addEventListener('click', () => {
+            video.muted = false; 
+            playButton.style.display = 'none';
+        });
+    </script>
+</body>
+</html>

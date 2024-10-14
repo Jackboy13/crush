@@ -1,0 +1,27 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffe6e6; /* Love-themed soft pink background */
+    text-align: center;
+}
+
+.video-container {
+    width: 80%;
+    max-width: 800px; /* Limit the maximum width of the video */
+    margin-bottom: 20px; /* Space between video and text */
+}
+
+video {
+    width: 100%; /* Make video responsive */
+    border: none;
+}
+
+h1 {
+    color: #ff3366; /* Text color */
+    font-size: 2rem;
+}
